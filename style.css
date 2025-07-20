@@ -1,94 +1,116 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
+/* Reset and Base Styles */
+* {
   margin: 0;
   padding: 0;
-  background: #111;
-  color: #eee;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+  line-height: 1.6;
 }
 
+/* Hero Section */
 .hero {
-  position: relative;
+  background: linear-gradient(135deg, #1f1f1f, #2b2b2b);
+  padding: 100px 20px;
   text-align: center;
 }
-
-.hero img {
-  width: 100%;
-  height: auto;
-  opacity: 0.6;
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
-
-.hero-text {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+.hero-content p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
 }
-
-.btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background: #0f0;
+.cta-button {
+  padding: 12px 24px;
+  background: #00ffae;
   color: #000;
-  text-decoration: none;
   font-weight: bold;
-}
-
-.about, .contact {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 40px;
-  align-items: center;
-  gap: 30px;
-}
-
-.about img, .contact img {
-  max-width: 400px;
-  width: 100%;
-  border-radius: 10px;
-}
-
-.services {
-  padding: 40px;
-  text-align: center;
-}
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.card {
-  background: #222;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 250px;
-  text-align: center;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  border: none;
+  text-decoration: none;
   border-radius: 5px;
 }
 
-button {
-  padding: 10px 20px;
-  margin-top: 10px;
-  background: #0f0;
-  color: black;
-  border: none;
-  font-weight: bold;
+/* Services Section */
+.services {
+  padding: 60px 20px;
+  text-align: center;
+}
+.services h2 {
+  margin-bottom: 2rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+.card {
+  background: #1c1c1c;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+.card img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
 }
 
+/* About Section */
+.about {
+  padding: 60px 20px;
+  background: #171717;
+  text-align: center;
+}
+.about h2 {
+  margin-bottom: 1rem;
+}
+.about p {
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+  background: #111;
+  text-align: center;
+}
+.contact h2 {
+  margin-bottom: 1rem;
+}
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+input, textarea {
+  margin-bottom: 1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+}
+button {
+  background: #00ffae;
+  color: #000;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
 footer {
   background: #000;
   text-align: center;
   padding: 20px;
-  color: #888;
+  font-size: 0.9rem;
 }
